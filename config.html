@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical News Config</title>
+</head>
+<body>
+    <h1>Configure seu Motor de Busca</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>{{ form.frequency.label }}: {{ form.frequency }}</p>
+        <p>{{ form.databases.label }}: {{ form.databases }}</p>
+        <p>{{ form.descriptors.label }}: {{ form.descriptors }}</p>
+        <p>{{ form.email.label }}: {{ form.email }}</p>
+        <p>{{ form.periodicity.label }}: {{ form.periodicity }}</p>
+        <p>{{ form.submit }}</p>
+    </form>
+    {% if config %}
+    <h2>Configuração Atual</h2>
+    <p>Frequência: {{ config.frequency }}</p>
+    <p>Bases: {{ config.databases }}</p>
+    <p>Descritores: {{ config.descriptors }}</p>
+    <p>Email: {{ config.email }}</p>
+    <p>Periodicidade: {{ config.periodicity }}</p>
+    {% endif %}
+</body>
+</html>

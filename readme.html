@@ -1,13 +1,21 @@
 A Big Ideia:
-É muito difícil acompanhar as publicações médicas mais importantes.
+É muito difícil acompanhar as publicações médicas mais importantes. E os temas que você tem preferência ou tem maior atração para acompanhar.
 As curadorias e revisões por pares publicadas em períodicos médicos muitas vezes selecionam para publicação alguns temas pouco interessantes para nossa prática diária.
-A proposta seria um Obter diariamente ou semanalmente um informativo ou apanhado da literatura médica sobre temas pré determinados, publicados recentemente ou naquela semana, com a curadoria definida pessoalmente e individualmente, através de uma busca nos principais repositórios e principais periódicos, publicações médicas e revistas médicas, nacionais e internacionais. 
-
-Implementação: Desenvolver um aplicativo ou um Robô que fizesse a busca diária e armazenasse num banco de dados e publicasse semanalmente baseado nos descritores definidos pelo usuário.
-
+A proposta seria um Obter um informativo ou apanhado da literatura médica sobre temas pré determinados, publicados recentemente ou naquela semana, com a curadoria definida pessoalmente e individualmente, através de uma busca nos principais repositórios e principais periódicos, publicações médicas e revistas médicas, nacionais e internacionais. 
+Implementação: Desenvolver um aplicativo ou um Robô que fizesse a busca diária e armazenasse num banco de dados e elaborasse uma compilação baseado nos descritores definidos pelo usuário.
+Periodicidade: O usuário indicaria se prefere diariamente ou semanalmente a busca dos descritores em saúde.
+Os filtros: O usuário indica se prefere os últimos 5 ou 10 anos. Revisões sistemáticas, Revisões, Artigo de periódicos, capítulo de livros.
+As fontes de pesquisa: Descritores em saúde: São os tópicos e palavras-chaves usadas para busca e classificação dos artigos científicos. Esses Descritores podem ser encontrados na BVS ou Pubmed Mesh.
+Os descritores seria buscados no https://decs.bvsalud.org/, no DECS da BVS e no https://www.ncbi.nlm.nih.gov/mesh/, Mesh do Pubmed. Também no https://www.nlm.nih.gov/mesh/meshhome.html
 Implementação: Buscar na literatura médica atual, usando limitadores de data de publicação e indicado anteriormente. Esses artigos seriam armazenados e semanalmente publicados em email ou página de internet. Em seguida, seriam enviados para o Notebook LM e gerado um podcast da semana, com os dados mais relevantes.
-
-Descritores em saúde: São os tópicos e palavras-chaves usadas para busca e classificação dos artigos científicos. Esses Descritores podem ser encontrados na BVS ou Pubmed Mesh.
-
 Metodologia: O usuário se cadastra e cria um motor de busca ou vários motores. Se for um pesquisador com diversas áreas de estudo e diversas orientações de pesquisa, pode criar diversos mecanismos de busca ou motores de busca, e definir exatamente onde buscar, como Lilacs, BVS, PUBMED, Scielo, Elsevier, entre outros.
-O usuário pode receber por email, com o título: Medical News @usuário: *Modelo de Busca*
+O usuário pode receber por email, com o título: Medical News @usuário: *Descritores de saúde* *Modelo de Busca* *numero_da_semana* *dia*
+A tela inicial deverá conter:
+*Nome de usuário
+*Descritores de Saúde para busca
+*Periodicidade
+*Filtros
+*Forma de contato: email 
+*Data de início da busca:
+*Data de fim da busca - se deixar em branco não parar
+Usar a NVIDIA_API_KEY que encontra-se em segredo no Secrets Git-hub.
